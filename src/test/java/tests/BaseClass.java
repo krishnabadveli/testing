@@ -31,6 +31,8 @@ public class BaseClass extends ExtentReportDemo{
 	@Test
 	public void sampleTest()
 	{
+		
+		
 		System.out.println("Inside test");
 		
 	}
@@ -50,7 +52,7 @@ public class BaseClass extends ExtentReportDemo{
         capabilities.setCapability("platformVersion", "9");
         capabilities.setCapability("appPackage", "com.google.android.calculator");
         capabilities.setCapability("appActivity", "com.android.calculator2.Calculator");
-       // capabilities.setCapability(MobileCapabilityType.APP ,"absolutepathofapp");   //if using app
+       //  capabilities.setCapability(MobileCapabilityType.APP ,"absolutepathofapp");   //if using app
       //  capabilities.setCapability(MobileCapabilityType.BROWSER_NAME ,"Chrome");
         driver =new AppiumDriver<MobileElement>(url,capabilities);
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
